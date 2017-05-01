@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery Test</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <div data-role="page" id="page1">
+     <div data-role="panel" id="Mypanel" data-display="overlay" data-position-fixed="true">
+     	  
+     	 <a href="#page1" class="ui-btn ui-btn-inline " data-rel="close">CLOSE</a>
+     	  
+     </div>
+  	 <div data-role="header">
+  	 	<h2>heaer</h2>
+  	 </div>
+  	 <div data-role="main" class="ui-content">
+  	 	 <a href="#Mypanel" class="ui-btn ui-btn-inline">panel</a>
+  	 	  
+          <div data-role="collapsible-set">
+          	<div data-role="collapsible" data-collapsed="false">
+              <h2>content</h2>
+  	 	      <p>hello world</p>
+  	 	   </div>
+  	 	    <div data-role="collapsible">
+  	 	    	<h2>你好世界</h2>
+  	 	    	<p>to Be NO 1</p>
+  	 	    </div>
+  	 	    <div data-role="collapsible">
+  	 	    	<h2>你好世界</h2>
+  	 	    	<p>to Be NO 1</p>
+  	 	    </div>
+  	 	    <div data-role="collapsible">
+  	 	    	<h2>你好世界</h2>
+  	 	    	<p>to Be NO 1</p>
+  	 	    </div>
+          </div>
+         <h2>table</h2>
+
+         <table data-role="table" class="ui-responsive" >
+         	  <thead>
+         	  	<th>one</th>
+         	  	<th>two</th>
+         	  	<th>three</th>
+         	  	<th>four</th>
+         	  </thead>
+         	  <tbody>
+         	  	<tr><td>one</td><td>one</td><td>one</td><td>one</td></tr>
+         	  	<tr><td>one</td><td>one</td><td>one</td><td>one</td></tr>
+         	  	<tr><td>one</td><td>one</td><td>one</td><td>one</td></tr>
+         	  	<tr><td>one</td><td>one</td><td>one</td><td>one</td></tr>
+         	  	<tr><td>one</td><td>one</td><td>one</td><td>one</td></tr>
+         	  </tbody>
+
+
+         </table>
+           <ul data-role="listview" data-inset="true" data-autodividers="true">
+           	<li class="" data-icon="home"><a href="#">one</a></li>
+           	<li><a href="#">Ane</a></li>
+           	<li><a href="#">Cne</a></li>
+           	<li data-role="list-divider"><a href="#">one</a></li>
+           	<li data-icon="location"><a href="#">Dne <span class="ui-li-count">ss</span></a></li>
+           	<li><a href="#">Fne</a></li>
+           </ul>
+           <div>
+           	 <h4>Search People...</h4>
+           	 <input type="text" name="" id="PeopleSearch" data-type="search">
+           	 <ul data-role="listview" data-autodividers="true" data-filter="true" data-input="#PeopleSearch" data-inset="true">
+           	 	<li data-icon="home"><a href="#">Abode</a></li>
+           	 	<li><a href="#">Java</a></li>
+           	 	<li><a href="#">JavaScript</a></li>
+           	 	<li><a href="#">CSS3</a></li>
+           	 	<li><a href="#">HTML5</a></li>
+           	 	<li><a href="#">JQuery</a></li>
+
+           	 </ul>
+           </div>
+           <form action="#" method="post" >
+           	  <label for="name" class="ui-hidden-accessible">姓名：</label>
+           	  <input type="text" name="xingming" data-clear-btn="true">
+           	  <div class="ui-field-contain">
+           	  	<label for="age" class="ui-hidden-accessible">age</label>
+           	  	<input type="text" name="age" data-clear-btn="true">
+           	  </div>
+           	    <label for="switch">off/on</label>
+           	    <input type="checkbox" name="off" data-role="flipswitch" data-on-text="xinyu" data-off-text="majian">
+           </form>
+
+    </div>
+  	 	  
+  	 <div data-role="footer" >
+  	 	<h2>footer</h2>
+  	 </div>
+  </div>
+</body>
+</html>

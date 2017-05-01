@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery mobile events</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+   <div id="pageOne" data-role="page">
+   	  <div data-role="header" data-positon="fixed">
+   	  	<h3>header</h3>
+   	  <!-- </div> -->
+   	  <div data-role="main" class="ui-content">
+   	  	<h3>content</h3>
+   	  	<p data-transition="silde">hello world</p>
+        <span data-transition="fade">@xinyu</span>
+
+   	  </div>
+   	  <div data-role="footer" data-position="fixed">
+   	  	<h3>footer</h3>
+   	  </div>
+   </div>
+</body>
+<script type="text/javascript">
+	 $(document).on('pagecreate','#pageOne',function(){
+
+       $("p").on("tap",function(){
+	       $(this).hide();
+	   });
+	   $("span").on("taphold",function(){
+         $(this).hide();
+       });
+       $("span").on('swipe',function () {
+       	alert('hello world');
+       });
+
+	 });
+</script>
+</html>

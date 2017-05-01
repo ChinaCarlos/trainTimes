@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery Test</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+   <div data-role="page" id="pageOne">
+   	     <div data-role="header"> 
+   	     	<a href="#" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">header</a>
+   	     </div>
+   	     <div data-role="main" class="ui-content">
+   	     	<p>content</p>
+   	     	<a href="#pageTwo" data-transition="flow" class="ui-btn ui-icon-back ui-btn-icon-right">index2</a>
+   	     	<a href="#" data-rel="back" data-role="button" class="ui-btn ui-icon-back ui-btn-icon-left ui-alt-icon">back</a>
+   	     	<a href="#tanchang" class="ui-btn ui-btn-inline" data-rel="popup" data-role="button">弹窗1</a>
+   	     	<div id="tanchang" class="" data-role="popup" class="ui-content" data-position-to="window" data-transition="fade">
+   	     		<a href="#" data-rel="back" class=" ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+   	     		<h2>@xinyu</h2>
+   	     		<p>hello world</p>
+   	     	</div>
+   	     </div>
+   	     <div data-role="footer">
+   	     	<p>footer</p>
+   	     </div>
+   </div>
+
+   <div data-role="page" id="pageTwo" >
+   	     <div data-role="header" data-position="fixed"> 
+   	     	<P style="text-align: center;">HELLO WORLD@XINYU</P>
+   	     	<div data-role="navbar">
+   	     		<ul>
+   	     			<li><a href="#pageOne" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">首页</a></li>
+   	     			<li><a href="#" class="ui-btn ui-icon-lock ui-btn-icon-top">lock</a></li>
+   	     			<li><a href="#" class="ui-btn ui-icon-back ui-btn-icon-top">返回</a></li>
+   	     		</ul>
+   	     	</div>
+   	     </div>
+   	     <div data-role="main" class="ui-content" >
+   	     	<p>content page two</p>
+   	     	<a href="#pageOne" data-transition="pop" > index1</a>
+   	     	<a href="#pageOne" data-role="button" data-inline="true" class="ui-btn ui-nodisc-icon">pageOne</a>
+   	     	<button data-role="button" data-inline="true" class="ui-corner-all ui-btn ui-icon-lock ui-btn-icon-notext">pageOne</button>
+   	     	<div data-role="controlgroup" data-type="horizontal">
+   	     		<button data-role="button" class="ui-btn-a" data-inline="true">button1</button>
+   	     		<button data-role="button" class="ui-btn-b" data-inline="true">button2</button>
+   	     		<button data-role="button" data-inline="true" class="ui-shadow">button3</button>
+   	     		
+   
+   	     	</div>
+   	     	<a href="#dialog" data-role="btn" data-rel="popup" class="ui-btn ui-icon-lock ui-corner-all ui-btn-inline ">弹窗</a>
+   	     	<div data-role="popup" id="dialog">
+   	     		<p>hello world</p>
+   	     	</div>
+   	     	<a href="#leftdialog" class="ui-btn ui-btn-inline" data-rel="popup">左弹窗</a>
+   	     	<div data-role="popup" id="leftdialog" data-arrow='b' class="ui-content" data-overlay-theme="b">
+   	     		<a href="#" data-rel='back' class="ui-icon-back ui-btn-right ui-btn-inline ui-btn-icon-notext"></a>
+   	     		<p>hello world</p>
+   	     	</div>
+   	     </div>
+   	     <div data-role="footer" data-position="fixed">
+   	     	<p>footer</p>
+   	     </div>
+   </div>
+
+
+</body>
+</html>
